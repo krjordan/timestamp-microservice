@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Timestamp Microservice</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+
+  <div class="container">
+    <h1> FreeCodeCamp API Basejump: Timestamp Microservice</h1>
+    <blockquote>
+      User Stories:
+      <ol>
+        <li>I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)</li>
+        <li>If it does, it returns both the Unix timestamp and the natural language form of that date.</li>
+        <li>If it does not contain a date or Unix timestamp, it returns null for those properties.</li>
+      </ol>
+    </blockquote>
+  </div>
+
+  <div class="container">
+    <h3>Example Usage:</h3>
+    <code>http://localhost:3000/December%2015,%202015</code>
+    <br>
+    <code>http://localhost:3000/1450159200</code>
+  </div>
+
+  <div class="container">
+    <h3>Example Output:</h3>
+    <code>
+      { "unix": 1450159200, "natural": "December 15, 2015" }
+    </code>
+  </div>
+
+  <div class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+      <h5 class="text-center">Built by <a href="http://github.com/krjordan">Ryan</a></h5>
+    </div>
+  </div>
+
+</body>
+</html>
